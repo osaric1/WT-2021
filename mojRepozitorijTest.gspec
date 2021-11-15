@@ -1,0 +1,51 @@
+@objects
+    body body
+    url #url
+    godina #godina
+    branch #branch
+    send #send
+    repo #repo
+    agodina #agodina
+    grana #grana 
+= Width section =
+	repo:
+		width 0 to 100 % of body/width
+	agodina:
+		width 0 to 100 % of body/width
+	grana:
+		width 0 to 100 % of body/width
+
+= Height section =
+
+= Inside section =
+    repo:
+        inside url
+    agodina:
+        inside godina
+    grana:
+        inside branch
+= Left of section =
+
+= Right of section =
+
+
+= Above section =
+    repo:
+        above agodina
+    agodina:
+        above grana
+= Below section =
+	grana:
+        below agodina
+    agodina:
+        below repo
+
+= Visible section =
+	repo:
+        visible 
+    agodina:
+        visible
+    grana:
+        visible
+
+= Inside partly section =

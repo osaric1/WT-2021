@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Galen Test Report</title>
+        <link rel="stylesheet" href="galen-report.css"/>
+        <script src="vue.js"></script>
+        <script src="galen-report.js"></script>
+        <script type="text/javascript">
+var REPORT_DATA = {
+  "testId" : "1-zadacitest.gspec",
+  "name" : "zadaciTest.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  zadaciTest.gspec --url http://localhost/zadaci.html --size 500x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: zadaciTest.gspec included tags: ",
+          "status" : "info",
+          "time" : 1636746548835,
+          "sections" : [ {
+            "name" : "Width section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 16
+            },
+            "objects" : [ {
+              "name" : "komentar",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "komentar",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "komentar",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 480px]",
+                  "realDistance" : "81% [390px]"
+                } ],
+                "highlight" : [ "komentar" ]
+              } ]
+            }, {
+              "name" : "dugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugme",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "dugme",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 480px]",
+                  "realDistance" : "100% [480px]"
+                } ],
+                "highlight" : [ "dugme" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 480px]",
+                  "realDistance" : "17% [84px]"
+                } ],
+                "highlight" : [ "odabir_zadatka" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 26
+            },
+            "objects" : [ {
+              "name" : "odabir_vjezbe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "inside odaberi_v",
+                "meta" : [ ],
+                "highlight" : [ "odabir_vjezbe", "odaberi_v" ]
+              } ]
+            }, {
+              "name" : "odaberi_v",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "inside container",
+                "meta" : [ ],
+                "highlight" : [ "odaberi_v", "container" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "inside odaberi_z",
+                "meta" : [ ],
+                "highlight" : [ "odabir_zadatka", "odaberi_z" ]
+              } ]
+            }, {
+              "name" : "odaberi_z",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "inside container",
+                "meta" : [ ],
+                "highlight" : [ "odaberi_z", "container" ]
+              } ]
+            }, {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "inside odaberi_ver",
+                "meta" : [ ],
+                "highlight" : [ "odabir_verzije", "odaberi_ver" ]
+              } ]
+            }, {
+              "name" : "odaberi_ver",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "inside container",
+                "meta" : [ ],
+                "highlight" : [ "odaberi_ver", "container" ]
+              } ]
+            }, {
+              "name" : "komentar",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "inside tekstarea",
+                "meta" : [ ],
+                "highlight" : [ "komentar", "tekstarea" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Above section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 46
+            },
+            "objects" : [ {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "above komentar",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "komentar",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "38px"
+                } ],
+                "highlight" : [ "odabir_verzije", "komentar" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "above odabir_verzije",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_zadatka", "odabir_verzije" ]
+              } ]
+            }, {
+              "name" : "odabir_vjezbe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "above odabir_zadatka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_vjezbe",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_vjezbe", "odabir_zadatka" ]
+              } ]
+            }, {
+              "name" : "dugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "above errorslog",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugme",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "errorslog",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "58px"
+                } ],
+                "highlight" : [ "dugme", "errorslog" ]
+              } ]
+            }, {
+              "name" : "errorslog",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 56
+                },
+                "name" : "above bezgresaka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "errorslog",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "bezgresaka",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "errorslog", "bezgresaka" ]
+              } ]
+            }, {
+              "name" : "bezgresaka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 58
+                },
+                "name" : "above drugoDugme",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "bezgresaka",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "drugoDugme",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "bezgresaka", "drugoDugme" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Below section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 59
+            },
+            "objects" : [ {
+              "name" : "drugoDugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 61
+                },
+                "name" : "below bezgresaka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "drugoDugme",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "bezgresaka",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "drugoDugme", "bezgresaka" ]
+              } ]
+            }, {
+              "name" : "bezgresaka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 63
+                },
+                "name" : "below errorslog",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "bezgresaka",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "errorslog",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "bezgresaka", "errorslog" ]
+              } ]
+            }, {
+              "name" : "errorslog",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 65
+                },
+                "name" : "below dugme",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "errorslog",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "dugme",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "58px"
+                } ],
+                "highlight" : [ "errorslog", "dugme" ]
+              } ]
+            }, {
+              "name" : "dugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 67
+                },
+                "name" : "below komentar",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugme",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "komentar",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "24px"
+                } ],
+                "highlight" : [ "dugme", "komentar" ]
+              } ]
+            }, {
+              "name" : "komentar",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 69
+                },
+                "name" : "below odabir_verzije",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "komentar",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "38px"
+                } ],
+                "highlight" : [ "komentar", "odabir_verzije" ]
+              } ]
+            }, {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 71
+                },
+                "name" : "below odabir_zadatka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_verzije", "odabir_zadatka" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 73
+                },
+                "name" : "below odabir_vjezbe",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "odabir_vjezbe",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_zadatka", "odabir_vjezbe" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Visible section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 75
+            },
+            "objects" : [ {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 77
+                },
+                "name" : "visible",
+                "highlight" : [ "odabir_verzije" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 79
+                },
+                "name" : "visible",
+                "highlight" : [ "odabir_zadatka" ]
+              } ]
+            }, {
+              "name" : "odabir_vjezbe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 81
+                },
+                "name" : "visible",
+                "highlight" : [ "odabir_vjezbe" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "odaberi_v" : {
+              "area" : [ 10, 10, 480, 19 ]
+            },
+            "container" : {
+              "area" : [ 10, 10, 480, 77 ]
+            },
+            "komentar" : {
+              "area" : [ 10, 125, 390, 66 ]
+            },
+            "odaberi_ver" : {
+              "area" : [ 10, 68, 480, 19 ]
+            },
+            "tekstarea" : {
+              "area" : [ 10, 107, 480, 88 ]
+            },
+            "errorslog" : {
+              "area" : [ 10, 294, 390, 66 ]
+            },
+            "odabir_zadatka" : {
+              "area" : [ 120, 39, 84, 19 ]
+            },
+            "drugoDugme" : {
+              "area" : [ 10, 401, 480, 21 ]
+            },
+            "odabir_vjezbe" : {
+              "area" : [ 137, 10, 90, 19 ]
+            },
+            "odabir_verzije" : {
+              "area" : [ 120, 68, 41, 19 ]
+            },
+            "dugme" : {
+              "area" : [ 10, 215, 480, 21 ]
+            },
+            "odaberi_z" : {
+              "area" : [ 10, 39, 480, 19 ]
+            },
+            "bezgresaka" : {
+              "area" : [ 106, 374, 13, 13 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1636746546914,
+        "type" : "node"
+      } ],
+      "time" : 1636746543975,
+      "type" : "node"
+    } ]
+  }
+};
+        </script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="top-menu">
+                <a class="link" href="report.html">Back to Test Overview</a>
+                <span class="link" v-on:click="expandAll()">Expand All</span>
+                <span class="link" v-on:click="collapseAll()">Collapse All</span>
+                <span class="link" v-on:click="expandOnlyErrors()">Expand Errors</span>
+            </div>
+            <div v-for="node in reportData.report.nodes">
+                <report-node v-if="node.type === 'node'" v-bind:node="node"></report-node>
+                <div class="node-text" v-if="node.type === 'text'">
+                    {{node.name}}
+                </div>
+                <layout-report v-if="node.type === 'layout'" v-bind:layout="node"></layout-report>
+                <mutation-report v-if="node.type === 'mutation'" v-bind:report="node"></mutation-report>
+            </div>
+        </div>
+
+        <template id="tpl-report-node">
+            <div class="report-node">
+                <div class="node-line" v-bind:class="['status-' + node.status]">
+                    <span class="node-time">{{node.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(node)"
+                        v-bind:class="['status-' + node.status, node.expanded ? 'expanded': 'collapsed', 'contains-children-' + node.hasChildren]"
+                        >{{node.status}}</span>
+                    <span class="node-title">{{node.name}}</span>
+                    <span class="node-extras-link"
+                        v-if="node.extras"
+                        v-on:click="showNodeExtrasPopup(node.extras)"
+                        >extras</span>
+                </div>
+                <ul class="node-attachments" v-if="node.attachments && node.attachments.length > 0">
+                    <li v-for="attachment in node.attachments">
+                        <a class="icon-sprite-before node-attachment" v-bind:href="attachment">{{attachment}}</a>
+                    </li>
+                </ul>
+                <div class="child-nodes" v-if="node.type === 'node'" v-bind:class="{'child-nodes-expanded': node.expanded}">
+                    <div class="stacktrace" v-if="node.stacktrace">{{node.stacktrace}}</div>
+                    <div v-for="childNode in node.nodes">
+                        <report-node v-if="childNode.type === 'node'" v-bind:node="childNode"></report-node>
+                        <div class="node-text" v-if="childNode.type === 'text'">
+                            {{childNode.name}}
+                        </div>
+                        <layout-report v-if="childNode.type === 'layout'" v-bind:layout="childNode" v-bind:isSubLayout="false"></layout-report>
+                        <mutation-report v-if="childNode.type === 'mutation'" v-bind:report="childNode"></mutation-report>
+                    </div>
+                </div>
+                <div class="extras-popup popup-wrapper" v-if="extrasPopup.show">
+                    <div class="popup-shadow" v-on:click="extrasPopup.show = false"> </div>
+                    <div class="popup-container" style="top: 30px;">
+                        <div class="popup-body">
+                            <table class="extras-table">
+                                <tbody>
+                                    <tr v-for="extrasItem in extrasPopup.extras">
+                                        <td>{{extrasItem.name}}</td>
+                                        <td>
+                                            <div v-if="extrasItem.value.type === 'link'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'file'">
+                                                <a class="link" v-bind:href="extrasItem.value.value">{{extrasItem.value.value}}</a>
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'text'">
+                                                {{extrasItem.value.value}}
+                                            </div>
+                                            <div v-else v-if="extrasItem.value.type === 'image'">
+                                                <a v-bind:href="extrasItem.value.value"><img v-bind:src="extrasItem.value.value"/></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-mutation-report">
+            <div class="mutation-report">
+                <div class="node-line" v-bind:class="['status-' + report.status]">
+                    <span class="node-time">{{report.time | formatTime }}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(report)"
+                        v-bind:class="['status-' + report.status, report.expanded ? 'expanded': 'collapsed', 'contains-children-true']"
+                        >MUTATION</span>
+                    <span class="node-title">{{report.name}}</span>
+                </div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': report.expanded}">
+                    <table class="mutation-table">
+                        <thead>
+                            <tr>
+                                <th v-for="column in tableColumns" v-bind:class="{'sorted-column': sorting.columnField === column.field}">
+                                    <span class="link" v-on:click="sortTable(column)">{{column.name}}</span>
+                                    <span class="sorting-icon"
+                                        v-if="sorting.columnField === column.field"
+                                        v-bind:class="[sorting.order === 1 ? 'sorting-down' : 'sorting-up']"></span>
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="mutation-table-total">
+                                <td> <b>Total</b> </td>
+                                <td class="cell-passed">{{report.mutationReport.totalPassed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.totalFailed}}</td>
+                                <td class="cell-failed">{{report.mutationReport.failedRatio | roundFailedRatio}}%</td>
+                                <td></td>
+                            </tr>
+                            <tr v-for="mutation in mutations">
+                                <td><span class="link" v-on:click="toggleMutationFor(mutation.name)">{{mutation.name}}</span></td>
+                                <td class="cell-passed">{{mutation.passed}}</td>
+                                <td class="cell-failed">{{mutation.failed}}</td>
+                                <td class="cell-failed">{{mutation.failedRatio}}%</td>
+                                <td>
+                                    <div v-if="showFailedMutationsFor === mutation.name">
+                                        All failed mutations:
+                                        <ul>
+                                            <li v-for="mutationText in mutation.failedMutations">{{mutationText}}</li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-report">
+            <div class="layout-report">
+                <div class="node-line" v-bind:class="['status-' + layout.status]">
+                    <span class="node-time">{{layout.time | formatTime}}</span>
+                    <span class="node-label"
+                        v-on:click="toggleReportNode(layout)"
+                        v-bind:class="['status-' + layout.status, layout.expanded ? 'expanded': 'collapsed', 'contains-children-' + layout.hasChildren]"
+                        >LAYOUT</span>
+                    <span class="node-title">{{layout.name}}</span>
+                </div>
+                <div class="node-horizontal-menu">
+                    <span class="link" v-on:click="showFailureMap()">Failure Map</span> |
+                    <span class="link" v-on:click="showHeatMap()">Heat Map</span>
+                </div>
+
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': layout.expanded}">
+                    <layout-section v-for="section in layout.sections" v-bind:section="section" v-bind:bus="bus" v-bind:layout="layout" @spec-clicked="specClicked"></layout-section>
+                </div>
+
+                <screenshot-popup v-if="screenshotPopup.shown"
+                    v-bind:screenshot="screenshotPopup.screenshotFile"
+                    v-bind:highlight="screenshotPopup.highlightAreas"
+                    v-bind:guides="screenshotPopup.metaGuides"
+                    v-bind:spec="screenshotPopup.spec"
+                    @close="screenshotPopup.shown = false"
+                    ></screenshot-popup>
+            </div>
+        </template>
+
+        <template id="tpl-layout-section">
+            <div class="layout-section" v-bind:class="{'has-failure': section.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(section)"
+                    v-bind:title="section.place ? section.place.filePath + ':' + section.place.lineNumber : ''"
+                    >{{section.name}}</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': section.expanded}">
+                    <layout-section v-for="subSection in section.sections" v-bind:section="subSection" v-bind:bus="bus" v-bind:layout="layout"></layout-section>
+                    <object-node v-for="object in section.objects" v-bind:object="object" v-bind:bus="bus" v-bind:layout="layout"></object-node>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-object-node">
+            <div class="layout-object" v-bind:class="{'has-failure': object.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(object)"
+                    >{{object.name}}:</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': object.expanded}">
+                    <layout-spec v-for="spec in object.specs" v-bind:spec="spec" v-bind:bus="bus" v-bind:layout="layout"></layout-spec>
+
+                    <layout-spec-group v-if="object.specGroups"
+                        v-for="specGroup in object.specGroups"
+                        v-bind:specgroup="specGroup"
+                        v-bind:bus="bus"
+                        v-bind:layout="layout"
+                        ></layout-spec-group>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-spec-group">
+            <div class="layout-section" v-bind:class="{'has-failure': specgroup.hasFailure}">
+                <div class="title icon-sprite-before"
+                    v-on:click="toggleReportNode(specgroup)"
+                    >{{specgroup.name}}:</div>
+                <div class="child-nodes" v-bind:class="{'child-nodes-expanded': specgroup.expanded}">
+                    <layout-spec v-for="spec in specgroup.specs" v-bind:spec="spec" v-bind:bus="bus" v-bind:layout="layout"></layout-spec>
+                </div>
+            </div>
+        </template>
+
+        <template id="tpl-layout-spec">
+            <div class="layout-spec" v-bind:class="[isFailed ? 'has-failure': '', 'status-' + spec.status]">
+                <div class="title icon-sprite-before"
+                    v-on:click="showSpec"
+                    v-bind:title="spec.place ? spec.place.filePath + ':' + spec.place.lineNumber : ''"
+                    >{{spec.name}}</div>
+                <ul class="error-messages" v-if="isFailed">
+                    <li class="error-message" v-if="spec.imageComparison">
+                        <span class="link" v-on:click="imageComparisonShown = true">Show image comparison</span>
+                    </li>
+                    <li class="error-message" v-for="error in spec.errors">{{error}}</li>
+                </ul>
+                <div v-if="spec.subLayout" class="sublayout">
+                    <layout-section v-if="spec.subLayout.sections" v-for="section in spec.subLayout.sections" v-bind:section="section" v-bind:bus="bus" v-bind:layout="spec.subLayout"></layout-section>
+                </div>
+                <image-comparison-popup v-if="imageComparisonShown" v-on:close="imageComparisonShown = false" v-bind:imagedata="spec.imageComparison"/>
+            </div>
+        </template>
+
+
+        <template id="tpl-image-comparison-popup">
+            <div class="image-comparison-popup">
+                <div class="popup-shadow" v-on:click="$emit('close')"> </div>
+                <div class="popup-container" v-bind:style="{top: position.top + 'px', left: position.left + 'px', width: position.width + 'px', height: position.height + 'px'}">
+                    <div class="popup-body">
+                        <div class="image-layout">
+                            <h5>Actual Image</h5>
+                            <img v-bind:src="imagedata.actualImage"/>
+                        </div>
+                        <div class="image-layout">
+                            <h5>Expected Image</h5>
+                            <img v-bind:src="imagedata.expectedImage"/>
+                        </div>
+                        <div class="image-layout">
+                            <h5>Comparison Map</h5>
+                            <img v-bind:src="imagedata.comparisonMapImage"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+
+        <template id="tpl-screenshot-popup">
+            <div>
+                <div class="popup-shadow" v-on:click="$emit('close')"> </div>
+                <div class="popup-container" v-bind:style="{top: position.top + 'px', left: position.left + 'px', width: position.width + 'px', height: position.height + 'px'}">
+                    <div class="popup-body">
+                        <div class="image-cropper" v-bind:style="{width: crop.width + 'px', height: crop.height + 'px'}">
+                            <img v-bind:src="screenshot" v-bind:style="{'margin-left': crop.offsetLeft +'px', 'margin-top': crop.offsetTop + 'px'}"/>
+                        </div>
+                        <svg v-bind:width="crop.width + 'px'" v-bind:height="crop.height + 'px'">
+                            <g v-for="object in highlight.objects">
+                                <rect
+                                    v-bind:x="object.area.x + crop.offsetLeft"
+                                    v-bind:y="object.area.y + crop.offsetTop"
+                                    v-bind:width="object.area.width"
+                                    v-bind:height="object.area.height"
+                                    style="opacity: 0.8"
+                                    v-bind:style="{fill: object.fill?object.color:'none', 'stroke-width': object.border?3:0, stroke: object.border?object.color:'none'}"/>
+                                <g v-if="object.caption">
+                                    <rect
+                                        v-bind:x="object.area.x + crop.offsetLeft"
+                                        v-bind:y="object.area.y + crop.offsetTop - 20"
+                                        v-bind:width="object.name.length * 15 + 10"
+                                        v-bind:height="20"
+                                        style="opacity: 0.8; stroke-width: 0; stroke: none;"
+                                        v-bind:style="{fill: object.color}"/>
+                                    <text
+                                        v-bind:x="object.area.x + crop.offsetLeft + 5"
+                                        v-bind:y="object.area.y + crop.offsetTop - 5"
+                                        fill="#ffffff"
+                                        font-weight="bold"
+                                        font-family="helvetica"
+                                        font-size="15px"
+                                        >{{object.name}}</text>
+                                </g>
+                            </g>
+
+                            <g v-for="guideElements in guides">
+                                <g v-for="guide in guideElements">
+                                    <line class="meta-line-guide" v-if="guide.type === 'line'"
+                                        v-bind:x1="guide.x1 + crop.offsetLeft"
+                                        v-bind:y1="guide.y1 + crop.offsetTop"
+                                        v-bind:x2="guide.x2 + crop.offsetLeft"
+                                        v-bind:y2="guide.y2 + crop.offsetTop"/>
+
+                                    <g v-if="guide.type === 'text'">
+                                        <text class="meta-text"
+                                            v-bind:x="guide.x + crop.offsetLeft"
+                                            v-bind:y="guide.y + crop.offsetTop"
+                                            v-bind:transform="guide.vertical ? 'rotate(-90,' + (guide.x + crop.offsetLeft) + ', ' + (guide.y + crop.offsetTop) +')': 'rotate(0)'"
+                                            >{{guide.text}}</text>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <div class="popup-side-panel">
+                            <div v-if="spec">
+                                <span class="spec-name">{{spec.name}}</span>
+                                <ul v-if="spec.errors" class="spec-errors">
+                                    <li v-for="error in spec.errors">{{error}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <script>renderTestReport(REPORT_DATA);</script>
+    </body>
+</html>

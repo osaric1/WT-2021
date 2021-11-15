@@ -1,0 +1,83 @@
+@objects
+	body body
+	odabir_vjezbe #odabir_vjezbe
+	odabir_zadatka #odabir_zadatka
+	odabir_verzije #odabir_verzije
+    komentar #komentar 
+	dugme #dugme
+	drugoDugme #drugoDugme
+	errorslog #errorslog
+    bezgresaka #bezgresaka
+    container .container
+    odaberi_v #odaberi_v
+    odaberi_z #odaberi_z
+    odaberi_ver #odaberi_ver
+    tekstarea #tekstarea
+= Width section =
+	komentar:
+		width 0 to 100 % of body/width
+	dugme:
+		width 0 to 100 % of body/width
+	odabir_zadatka:
+		width 0 to 100 % of body/width
+
+= Height section =
+
+= Inside section =
+    odabir_vjezbe:
+        inside odaberi_v
+    odaberi_v:
+        inside container
+    odabir_zadatka:
+        inside odaberi_z
+	odaberi_z:
+        inside container
+    odabir_verzije:
+        inside odaberi_ver
+    odaberi_ver:
+        inside container 
+    komentar:
+        inside tekstarea
+= Left of section =
+
+= Right of section =
+
+
+= Above section =
+	odabir_verzije:
+        above komentar
+    odabir_zadatka:
+        above odabir_verzije
+    odabir_vjezbe:
+        above odabir_zadatka
+    dugme:
+        above errorslog
+    errorslog:
+        above bezgresaka
+    bezgresaka:
+        above drugoDugme
+= Below section =
+	drugoDugme:
+        below bezgresaka
+    bezgresaka:
+        below errorslog
+    errorslog:
+        below dugme
+    dugme:
+        below komentar
+    komentar:
+        below odabir_verzije
+    odabir_verzije:
+        below odabir_zadatka
+    odabir_zadatka:
+        below odabir_vjezbe
+
+= Visible section =
+	odabir_verzije:
+        visible 
+    odabir_zadatka:
+        visible
+    odabir_vjezbe:
+        visible
+
+= Inside partly section =

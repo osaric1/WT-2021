@@ -1,0 +1,311 @@
+{
+  "testId" : "1-mojrepozitorijtest.gspec",
+  "name" : "mojRepozitorijTest.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  mojRepozitorijTest.gspec --url http://localhost/mojRepozitorij.html --size 1024x768 --htmlreport vjezbeTestovi",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: mojRepozitorijTest.gspec included tags: ",
+          "status" : "info",
+          "time" : 1636747207902,
+          "sections" : [ {
+            "name" : "Width section",
+            "place" : {
+              "filePath" : "mojRepozitorijTest.gspec",
+              "lineNumber" : 10
+            },
+            "objects" : [ {
+              "name" : "repo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 12
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "repo",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "repo",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 992px]",
+                  "realDistance" : "17% [177px]"
+                } ],
+                "highlight" : [ "repo" ]
+              } ]
+            }, {
+              "name" : "agodina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 14
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "agodina",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "agodina",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 992px]",
+                  "realDistance" : "17% [177px]"
+                } ],
+                "highlight" : [ "agodina" ]
+              } ]
+            }, {
+              "name" : "grana",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 16
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grana",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "grana",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 992px]",
+                  "realDistance" : "17% [177px]"
+                } ],
+                "highlight" : [ "grana" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside section",
+            "place" : {
+              "filePath" : "mojRepozitorijTest.gspec",
+              "lineNumber" : 20
+            },
+            "objects" : [ {
+              "name" : "repo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "inside url",
+                "meta" : [ ],
+                "highlight" : [ "repo", "url" ]
+              } ]
+            }, {
+              "name" : "agodina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 24
+                },
+                "name" : "inside godina",
+                "meta" : [ ],
+                "highlight" : [ "agodina", "godina" ]
+              } ]
+            }, {
+              "name" : "grana",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 26
+                },
+                "name" : "inside branch",
+                "meta" : [ ],
+                "highlight" : [ "grana", "branch" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Above section",
+            "place" : {
+              "filePath" : "mojRepozitorijTest.gspec",
+              "lineNumber" : 32
+            },
+            "objects" : [ {
+              "name" : "repo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "above agodina",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "repo",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "agodina",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "repo", "agodina" ]
+              } ]
+            }, {
+              "name" : "agodina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "above grana",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "agodina",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "grana",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "agodina", "grana" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Below section",
+            "place" : {
+              "filePath" : "mojRepozitorijTest.gspec",
+              "lineNumber" : 37
+            },
+            "objects" : [ {
+              "name" : "grana",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 39
+                },
+                "name" : "below agodina",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "grana",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "agodina",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "grana", "agodina" ]
+              } ]
+            }, {
+              "name" : "agodina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 41
+                },
+                "name" : "below repo",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "agodina",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "repo",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "8px"
+                } ],
+                "highlight" : [ "agodina", "repo" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Visible section",
+            "place" : {
+              "filePath" : "mojRepozitorijTest.gspec",
+              "lineNumber" : 43
+            },
+            "objects" : [ {
+              "name" : "repo",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 45
+                },
+                "name" : "visible",
+                "highlight" : [ "repo" ]
+              } ]
+            }, {
+              "name" : "agodina",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 47
+                },
+                "name" : "visible",
+                "highlight" : [ "agodina" ]
+              } ]
+            }, {
+              "name" : "grana",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "mojRepozitorijTest.gspec",
+                  "lineNumber" : 49
+                },
+                "name" : "visible",
+                "highlight" : [ "grana" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "repo" : {
+              "area" : [ 230, 21, 177, 21 ]
+            },
+            "grana" : {
+              "area" : [ 229, 79, 177, 21 ]
+            },
+            "agodina" : {
+              "area" : [ 231, 50, 177, 21 ]
+            },
+            "branch" : {
+              "area" : [ 18, 76, 972, 24 ]
+            },
+            "url" : {
+              "area" : [ 18, 18, 972, 24 ]
+            },
+            "godina" : {
+              "area" : [ 18, 47, 972, 24 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1636747206418,
+        "type" : "node"
+      } ],
+      "time" : 1636747203608,
+      "type" : "node"
+    } ]
+  }
+}

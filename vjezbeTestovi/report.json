@@ -1,0 +1,17 @@
+{
+  "tests" : [ {
+    "name" : "mojRepozitorijTest.gspec",
+    "startedAt" : 1636747203605,
+    "endedAt" : 1636747208566,
+    "failed" : false,
+    "statistic" : {
+      "passed" : 13,
+      "errors" : 0,
+      "warnings" : 0,
+      "total" : 13
+    },
+    "testId" : "1-mojrepozitorijtest.gspec",
+    "duration" : 4961,
+    "failed" : false
+  } ]
+}

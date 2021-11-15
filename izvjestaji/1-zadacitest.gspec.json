@@ -1,0 +1,587 @@
+{
+  "testId" : "1-zadacitest.gspec",
+  "name" : "zadaciTest.gspec",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Simple check",
+      "status" : "info",
+      "nodes" : [ {
+        "name" : "check  zadaciTest.gspec --url http://localhost/zadaci.html --size 500x768 --htmlreport izvjestaji",
+        "status" : "info",
+        "nodes" : [ {
+          "name" : "Check layout: zadaciTest.gspec included tags: ",
+          "status" : "info",
+          "time" : 1636746548835,
+          "sections" : [ {
+            "name" : "Width section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 16
+            },
+            "objects" : [ {
+              "name" : "komentar",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 18
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "komentar",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "komentar",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 480px]",
+                  "realDistance" : "81% [390px]"
+                } ],
+                "highlight" : [ "komentar" ]
+              } ]
+            }, {
+              "name" : "dugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 20
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugme",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "dugme",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 480px]",
+                  "realDistance" : "100% [480px]"
+                } ],
+                "highlight" : [ "dugme" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 22
+                },
+                "name" : "width 0 to 100 % of body/width",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "left"
+                  },
+                  "to" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "right"
+                  },
+                  "expectedDistance" : "0 to 100% [0 to 480px]",
+                  "realDistance" : "17% [84px]"
+                } ],
+                "highlight" : [ "odabir_zadatka" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Inside section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 26
+            },
+            "objects" : [ {
+              "name" : "odabir_vjezbe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 28
+                },
+                "name" : "inside odaberi_v",
+                "meta" : [ ],
+                "highlight" : [ "odabir_vjezbe", "odaberi_v" ]
+              } ]
+            }, {
+              "name" : "odaberi_v",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 30
+                },
+                "name" : "inside container",
+                "meta" : [ ],
+                "highlight" : [ "odaberi_v", "container" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 32
+                },
+                "name" : "inside odaberi_z",
+                "meta" : [ ],
+                "highlight" : [ "odabir_zadatka", "odaberi_z" ]
+              } ]
+            }, {
+              "name" : "odaberi_z",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 34
+                },
+                "name" : "inside container",
+                "meta" : [ ],
+                "highlight" : [ "odaberi_z", "container" ]
+              } ]
+            }, {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 36
+                },
+                "name" : "inside odaberi_ver",
+                "meta" : [ ],
+                "highlight" : [ "odabir_verzije", "odaberi_ver" ]
+              } ]
+            }, {
+              "name" : "odaberi_ver",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 38
+                },
+                "name" : "inside container",
+                "meta" : [ ],
+                "highlight" : [ "odaberi_ver", "container" ]
+              } ]
+            }, {
+              "name" : "komentar",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 40
+                },
+                "name" : "inside tekstarea",
+                "meta" : [ ],
+                "highlight" : [ "komentar", "tekstarea" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Above section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 46
+            },
+            "objects" : [ {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 48
+                },
+                "name" : "above komentar",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "komentar",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "38px"
+                } ],
+                "highlight" : [ "odabir_verzije", "komentar" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 50
+                },
+                "name" : "above odabir_verzije",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_zadatka", "odabir_verzije" ]
+              } ]
+            }, {
+              "name" : "odabir_vjezbe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 52
+                },
+                "name" : "above odabir_zadatka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_vjezbe",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_vjezbe", "odabir_zadatka" ]
+              } ]
+            }, {
+              "name" : "dugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 54
+                },
+                "name" : "above errorslog",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugme",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "errorslog",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "58px"
+                } ],
+                "highlight" : [ "dugme", "errorslog" ]
+              } ]
+            }, {
+              "name" : "errorslog",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 56
+                },
+                "name" : "above bezgresaka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "errorslog",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "bezgresaka",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "errorslog", "bezgresaka" ]
+              } ]
+            }, {
+              "name" : "bezgresaka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 58
+                },
+                "name" : "above drugoDugme",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "bezgresaka",
+                    "edge" : "bottom"
+                  },
+                  "to" : {
+                    "object" : "drugoDugme",
+                    "edge" : "top"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "bezgresaka", "drugoDugme" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Below section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 59
+            },
+            "objects" : [ {
+              "name" : "drugoDugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 61
+                },
+                "name" : "below bezgresaka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "drugoDugme",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "bezgresaka",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "drugoDugme", "bezgresaka" ]
+              } ]
+            }, {
+              "name" : "bezgresaka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 63
+                },
+                "name" : "below errorslog",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "bezgresaka",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "errorslog",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "14px"
+                } ],
+                "highlight" : [ "bezgresaka", "errorslog" ]
+              } ]
+            }, {
+              "name" : "errorslog",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 65
+                },
+                "name" : "below dugme",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "errorslog",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "dugme",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "58px"
+                } ],
+                "highlight" : [ "errorslog", "dugme" ]
+              } ]
+            }, {
+              "name" : "dugme",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 67
+                },
+                "name" : "below komentar",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "dugme",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "komentar",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "24px"
+                } ],
+                "highlight" : [ "dugme", "komentar" ]
+              } ]
+            }, {
+              "name" : "komentar",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 69
+                },
+                "name" : "below odabir_verzije",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "komentar",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "38px"
+                } ],
+                "highlight" : [ "komentar", "odabir_verzije" ]
+              } ]
+            }, {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 71
+                },
+                "name" : "below odabir_zadatka",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_verzije",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_verzije", "odabir_zadatka" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 73
+                },
+                "name" : "below odabir_vjezbe",
+                "meta" : [ {
+                  "from" : {
+                    "object" : "odabir_zadatka",
+                    "edge" : "top"
+                  },
+                  "to" : {
+                    "object" : "odabir_vjezbe",
+                    "edge" : "bottom"
+                  },
+                  "expectedDistance" : ">= 0px",
+                  "realDistance" : "10px"
+                } ],
+                "highlight" : [ "odabir_zadatka", "odabir_vjezbe" ]
+              } ]
+            } ]
+          }, {
+            "name" : "Visible section",
+            "place" : {
+              "filePath" : "zadaciTest.gspec",
+              "lineNumber" : 75
+            },
+            "objects" : [ {
+              "name" : "odabir_verzije",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 77
+                },
+                "name" : "visible",
+                "highlight" : [ "odabir_verzije" ]
+              } ]
+            }, {
+              "name" : "odabir_zadatka",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 79
+                },
+                "name" : "visible",
+                "highlight" : [ "odabir_zadatka" ]
+              } ]
+            }, {
+              "name" : "odabir_vjezbe",
+              "specs" : [ {
+                "status" : "info",
+                "place" : {
+                  "filePath" : "zadaciTest.gspec",
+                  "lineNumber" : 81
+                },
+                "name" : "visible",
+                "highlight" : [ "odabir_vjezbe" ]
+              } ]
+            } ]
+          } ],
+          "objects" : {
+            "odaberi_v" : {
+              "area" : [ 10, 10, 480, 19 ]
+            },
+            "container" : {
+              "area" : [ 10, 10, 480, 77 ]
+            },
+            "komentar" : {
+              "area" : [ 10, 125, 390, 66 ]
+            },
+            "odaberi_ver" : {
+              "area" : [ 10, 68, 480, 19 ]
+            },
+            "tekstarea" : {
+              "area" : [ 10, 107, 480, 88 ]
+            },
+            "errorslog" : {
+              "area" : [ 10, 294, 390, 66 ]
+            },
+            "odabir_zadatka" : {
+              "area" : [ 120, 39, 84, 19 ]
+            },
+            "drugoDugme" : {
+              "area" : [ 10, 401, 480, 21 ]
+            },
+            "odabir_vjezbe" : {
+              "area" : [ 137, 10, 90, 19 ]
+            },
+            "odabir_verzije" : {
+              "area" : [ 120, 68, 41, 19 ]
+            },
+            "dugme" : {
+              "area" : [ 10, 215, 480, 21 ]
+            },
+            "odaberi_z" : {
+              "area" : [ 10, 39, 480, 19 ]
+            },
+            "bezgresaka" : {
+              "area" : [ 106, 374, 13, 13 ]
+            }
+          },
+          "screenshot" : "layout-1-screenshot.png",
+          "type" : "layout"
+        } ],
+        "time" : 1636746546914,
+        "type" : "node"
+      } ],
+      "time" : 1636746543975,
+      "type" : "node"
+    } ]
+  }
+}

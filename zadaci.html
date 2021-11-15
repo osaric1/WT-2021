@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="zadaci.css">
+<TITLE>Spirala 1</TITLE>
+</HEAD>
+<body>
+
+<form>
+<div class="container">
+  <div id="odaberi_v">
+    <label for="odabir_vjezbe">Odabir vježbe:</label>
+
+    <select name="odabir_vjezbe" id="odabir_vjezbe">
+      <option >Vježba 1</option>
+      <option >Vježba 2</option>
+      <option >Vježba 3</option>
+      <option >Vježba 4</option>
+    </select> 
+  </div>
+  <div id="odaberi_z">
+    <label for="odabir_zadatka">Odabir zadatka:</label>
+
+    <select name="odabir_zadatka" id="odabir_zadatka">
+      <option >Zadatak 1</option>
+      <option >Zadatak 2</option>
+      <option >Zadatak 3</option>
+      <option >Zadatak 4</option>
+    </select> 
+  </div>
+
+  <div id="odaberi_ver">
+    <label for="odabir_verzije">Odabir verzije:</label>
+
+    <select name="odabir_verzije" id="odabir_verzije">
+      <option >V1</option>
+      <option >V2</option>
+      <option >V3</option>
+      <option >V4</option>
+    </select> 
+  </div>  
+</div>
+
+<div id="tekstarea">
+  <label for="komentar">Komentar:</label>
+  <br>
+  <textarea id="komentar" name="komentar" rows="4" cols="50">
+
+  </textarea>
+</div>
+
+<div id="dugme">
+   <button type="button">Pošalji</button> 
+</div>
+</form>
+
+
+<form class="drugaForma">
+  <label for="errorslog">Errors log</label>
+  <br>
+  <textarea id="errorslog" name="errorslog" rows="4" cols="50">
+  </textarea><br>
+  <label for="bezgresaka">Bez grešaka</label>
+  <input type="checkbox" id="bezgresaka" name="bezgresaka" value="Bez grešaka">
+  <div id="drugoDugme">
+   <button type="button">Dodaj rezultate testa</button> 
+  </div>
+</form>
+</body>
+</HTML>
