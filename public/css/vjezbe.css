@@ -1,0 +1,88 @@
+body{
+	margin:  0;
+	padding: 0;
+	font-size: 20px;
+	font-family: Calibri;
+}
+img{
+	max-width:100%;
+	max-height:100%;
+}
+.wrap{
+	display: grid;
+	grid-column-gap: 20px;
+	grid-template-columns: 50% 50%;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+button{ 
+	background-color: #3f8e9b; 
+	border: 1px solid #38656d; 
+	color: white; 
+	padding: 10px 15px; 
+	cursor: pointer; 
+	margin-right: 5px;
+}
+#odabirVjezbe{
+	display: grid;
+}
+#meni{
+	width: 100%;
+	background-color:  #2aa2e7 ;
+	padding-bottom: 0.5em;
+	padding-top: 3.3em;
+}
+#grupelnk, #vjezbelnk{
+	text-decoration: none; 
+	color:  #232e34 ;
+	font-weight: bold;
+	padding: 5px;
+}
+@media screen and (max-width: 799px) {
+	.wrap{
+		grid-template-columns: 100%;
+		margin-right: 20px;
+	}
+	.graf{
+		width: 100%;
+		order: 2;
+	}
+	#odabirVjezbe{
+		width: 100%;
+		order: 1;
+	}
+	#meni{
+		display: grid;
+		grid-row-gap: 0.5em;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
+@media screen and (min-width: 800px) {
+	.wrap{
+	}
+	 /* Three image containers (use 25% for four, and 50% for two, etc) */
+	.column {
+  		float: left;
+  		width: 40%;
+  		padding: 5px;
+	}
+	/* Clear floats after image containers */
+	.row::after {
+  		content: "";
+  		clear: both;
+  		display: table;
+	} 
+	#odabirVjezbe{
+	
+	
+	}
+	#meni{
+	}
+	.graf{
+		width: 45vw;
+		padding: 5px;
+	}
+}
