@@ -1,7 +1,6 @@
-
-
-chai.should();
+chai.should()
 var expect = chai.expect
+var example = null;
 describe('VjezbaAjax', function(){
     beforeEach(function(){
         this.ajax = sinon.useFakeXMLHttpRequest();
@@ -65,7 +64,7 @@ describe('VjezbaAjax', function(){
 
     it('iscrtajVjezbe TEST 1 - broj vjezbi je 4',function(done){
         var div = document.createElement("odabirVjezbe")
-        VjezbeAjax.iscrtajVjezbe(div,JSON.stringify({brojVjezbi:4,brojZadataka:[5,5,5,5]}))
+        VjezbeAjax.iscrtajVjezbe(div,{brojVjezbi:4,brojZadataka:[5,5,5,5]})
         div.querySelectorAll("button").should.have.lengthOf(4)
         div.querySelectorAll("div").should.have.lengthOf(4)
         let arr = div.querySelectorAll("button")
@@ -79,9 +78,9 @@ describe('VjezbaAjax', function(){
 
     it('iscrtajVjezbe TEST 2 - broj vjezbi je neispravan', function(done){
         var div = document.createElement("odabirVjezbe")
-        VjezbeAjax.iscrtajVjezbe(div,JSON.stringify({brojVjezbi:-2,brojZadataka:[]}))
+        VjezbeAjax.iscrtajVjezbe(div,{brojVjezbi:-2,brojZadataka:[]})
 
-        VjezbeAjax.iscrtajVjezbe(div,JSON.stringify({brojVjezbi:16,brojZadataka:[]}))
+        VjezbeAjax.iscrtajVjezbe(div,{brojVjezbi:16,brojZadataka:[]})
         div.querySelectorAll("button").should.have.lengthOf(0)
         div.querySelectorAll("div").should.have.lengthOf(0)
         done()
@@ -133,29 +132,80 @@ describe('VjezbaAjax', function(){
         done()
     })
 
-    it('posaljiPodatke TEST 1 - GET zahtjev, sve u redu',function(done){
-        var data = {brojVjezbi: 5, brojZadataka:[2,5,4,5,2]}
+    it('dohvatiPodatke TEST 1 - GET zahtjev, sve u redu',function(done){
+        var data = new Object()
+        data.brojVjezbi = 5
+        data.brojZadataka = [2,5,4,5,2]
         var dataJSON = JSON.stringify(data)
 
         VjezbeAjax.dohvatiPodatke(function(err,result){
             result.should.deep.equal(dataJSON)
+            expect(err).to.be.null
             done()
         })
 
         this.requests[0].respond(200, { 'Content-Type': 'text/json' }, dataJSON);
     })
 
-    it('posaljiPodatke TEST 2 - GET zahtjev, neispravni podaci',function(done){
-        var data = {brojVjezbi: 16, brojZadataka:[]}
-        var dataJSON = JSON.stringify(data)
+    it('dohvatiPodatke TEST 2 - GET zahtjev, neispravni podaci',function(done){
+        var obj = new Object()
+        obj.status = "err"
+        obj.data = "Pogrešan parametar brojVjezbi"
+        var objJSON = JSON.stringify(obj)
 
         VjezbeAjax.dohvatiPodatke(function(err,result){
-            console.log(result)
-            console.log(err)
-            err.should.exist
-            result.should.equal(null)
+            err.should.equal(obj.data)
+            expect(result).to.be.null
             done()
         })
-        this.requests[0].respond(500)
+        this.requests[0].respond(400, { 'Content-Type': 'text/json' }, objJSON);
+    })
+
+    it('dohvatiPodatke TEST 3 - GET zahtjev, neispravni podaci', function(done){
+        var obj = new Object()
+        obj.status = "err"
+        obj.data = "Pogrešan parametar brojVjezbi,z0,z1"
+        var objJSON = JSON.stringify(obj)
+
+        VjezbeAjax.dohvatiPodatke(function(err,result){
+            err.should.equal(obj.data)
+            expect(result).to.be.null
+            done()
+        })
+        this.requests[0].respond(400, { 'Content-Type': 'text/json' }, objJSON);
+
+    })
+
+    it('dohvatiPodatke TEST 4 - GET zahtjev',function(done){
+        var obj = new Object()
+        obj.status = "err"
+        obj.data = "Pogrešan parametar brojVjezbi"
+        var objJSON = JSON.stringify(obj)
+
+        VjezbeAjax.dohvatiPodatke(function(err,result){
+            err.should.exist;
+            expect(result).to.be.null
+            expect(err).to.equal(obj.data)
+            done()
+        })
+        this.requests[0].respond(500,  { 'Content-Type': 'text/json' }, objJSON);
+    })
+
+    it('posaljiPodatke TEST 1 - POST zahtjev', function(){
+        var data = {brojVjezbi: 5, brojZadataka:[5,5,5,5,5]}
+        var dataJSON = JSON.stringify(data)
+        VjezbeAjax.posaljiPodatke(data, function(err,result) { 
+
+        });
+        this.requests[0].requestBody.should.equal(dataJSON)
+    })
+    
+    it('posaljiPodatke TEST 2 - POST zahtjev', function(){
+        var data = {brojVjezbi: -2, brojZadataka:[]}
+        var dataJSON = JSON.stringify(data)
+        VjezbeAjax.posaljiPodatke(data, function(err,result) { 
+
+        });
+        this.requests[0].requestBody.should.equal(dataJSON)
     })
 });

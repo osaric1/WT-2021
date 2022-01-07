@@ -12,8 +12,7 @@ dugme.onclick = function(event){
     for(let i = 0; i < sviInputi.length; i++){
         obj.brojZadataka.push(parseInt(sviInputi[i].value))
     }
-    console.log(JSON.stringify(obj))
-    VjezbeAjax.posaljiPodatke(JSON.stringify(obj), function(err,data){
+    VjezbeAjax.posaljiPodatke(obj, function(err,data){
         if(err != null)
             alert(err)
         else{

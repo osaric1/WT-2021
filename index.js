@@ -21,7 +21,7 @@ app.get('/vjezbe', function(req,res){
         if(content.length == 0 || content.length > 15){
             pogresniParametri += "brojVjezbi"
         }
-        console.log(content)
+
         var brZadataka = []
         for(let i = 0; i < content.length; i++ ){
             var linija = content[i].split(',');
@@ -89,7 +89,7 @@ app.post('/vjezbe', function(req,res){
 
     fs.writeFile("vjezbe.csv",podaci,  function(err){
         if(err) throw err
-        console.log("Uspjesno dodano!")
+     
     })
     res.json(jsonObject)
 })

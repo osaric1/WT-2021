@@ -24,15 +24,16 @@ let VjezbeAjax = (function(){
     var posaljiPodatke = function(vjezbeObjekat,callbackFja){
         var ajax = new XMLHttpRequest()
         ajax.onreadystatechange = function() {// Anonimna funkcija
-            if (ajax.readyState == 4 && ajax.status == 200)
+            if (ajax.readyState == 4 && ajax.status == 200){
                 callbackFja(null,ajax.response)
+            }
             else if(ajax.readyState == 4){
                 callbackFja(JSON.parse(ajax.response).data, null)
             }
         }
         ajax.open("POST", "http://localhost:3000/vjezbe", true)
         ajax.setRequestHeader("Content-Type", "application/json")
-        ajax.send(vjezbeObjekat)
+        ajax.send(JSON.stringify(vjezbeObjekat))
     }
     var dohvatiPodatke = function(callbackFja){
         var ajax = new XMLHttpRequest()
@@ -48,7 +49,7 @@ let VjezbeAjax = (function(){
         
     }
     var iscrtajVjezbe = function(divDOMelement,vjezbeObjekat){
-        brojVjezbi = JSON.parse(vjezbeObjekat).brojVjezbi
+        brojVjezbi = vjezbeObjekat.brojVjezbi
 
         if(brojVjezbi < 16){
             for(let i = 0; i < brojVjezbi; i++){

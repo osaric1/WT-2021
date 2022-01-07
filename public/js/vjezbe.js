@@ -12,7 +12,7 @@ window.onload = function(){
     if(err != null)
       alert(err)
     else{
-      VjezbeAjax.iscrtajVjezbe(document.getElementById("odabirVjezbe"),data)
+      VjezbeAjax.iscrtajVjezbe(document.getElementById("odabirVjezbe"),JSON.parse(data))
       var dugmad = document.getElementById("odabirVjezbe").querySelectorAll("button")
       for(let i = 0; i < dugmad.length; i++){
         dugmad[i].onclick = function(e){
