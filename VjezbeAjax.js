@@ -28,7 +28,7 @@ let VjezbeAjax = (function(){
                 callbackFja(null,ajax.response)
             }
             else if(ajax.readyState == 4){
-                callbackFja(JSON.parse(ajax.response).data, null)
+                callbackFja(ajax.response.data, null)
             }
         }
         ajax.open("POST", "http://localhost:3000/vjezbe", true)

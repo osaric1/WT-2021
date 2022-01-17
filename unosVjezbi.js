@@ -4,6 +4,7 @@ object.onblur = function(){
 }
 var dugme = document.getElementById("dugme")
 dugme.onclick = function(event){
+    event.preventDefault()
     var obj = new Object()
     obj.brojVjezbi = parseInt(object.value)
     obj.brojZadataka = []
