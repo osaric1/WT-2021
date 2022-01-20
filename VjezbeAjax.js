@@ -24,11 +24,11 @@ let VjezbeAjax = (function(){
     var posaljiPodatke = function(vjezbeObjekat,callbackFja){
         var ajax = new XMLHttpRequest()
         ajax.onreadystatechange = function() {// Anonimna funkcija
-            if (ajax.readyState == 4 && ajax.status == 200){
-                callbackFja(null,ajax.response)
+            if (ajax.readyState == 4 && ajax.status == 200 && ajax.response != ''){
+                callbackFja(null,JSON.parse(ajax.response).data)
             }
             else if(ajax.readyState == 4){
-                callbackFja(ajax.response.data, null)
+                callbackFja(JSON.parse(ajax.response).data, null)
             }
         }
         ajax.open("POST", "http://localhost:3000/vjezbe", true)
@@ -38,8 +38,8 @@ let VjezbeAjax = (function(){
     var dohvatiPodatke = function(callbackFja){
         var ajax = new XMLHttpRequest()
         ajax.onreadystatechange = function() {
-            if (ajax.readyState == 4 && ajax.status == 200)
-                callbackFja(null,ajax.response)
+            if (ajax.readyState == 4 && ajax.status == 200 && ajax.response != '')
+                callbackFja(null,JSON.parse(ajax.response).data)
             else if(ajax.readyState == 4){
                 callbackFja(JSON.parse(ajax.response).data, null)
             }

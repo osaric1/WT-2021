@@ -5,7 +5,6 @@ let StudentAjax = (function(){
         ajax.onreadystatechange = function() {// Anonimna funkcija
             
             if (ajax.readyState == 4 && ajax.status == 200 && ajax.response != ''){
-                console.log(JSON.parse(ajax.response).status)
                 fnCallback(null,JSON.parse(ajax.response).status)
             }
             else if(ajax.readyState == 4){
@@ -28,7 +27,6 @@ let StudentAjax = (function(){
                 fnCallback(JSON.parse(ajax.response).status, null)
             }
         }
-        console.log(index)
         ajax.open("PUT", "http://localhost:3000/student/" + index, true)
         ajax.setRequestHeader("Content-Type", "application/json")
         ajax.send(JSON.stringify(JSON.parse(JSON.stringify({grupa: grupa}))))
@@ -46,10 +44,11 @@ let StudentAjax = (function(){
             }
         }
 
-        var arr = csvStudenti.split(',')
+        var arr = csvStudenti.split('\n')
         var jsonArray = []
-        for(let i = 0; i < arr.length; i+=4){
-            jsonArray.push({ime: arr[i], prezime: arr[i+1],index: arr[i+2], grupa: arr[i+3]})
+        for(let i = 0; i < arr.length; i++){
+            var linija = arr[i].split(',')
+            jsonArray.push({ime: linija[0], prezime: linija[1],index: linija[2], grupa: linija[3]})
         }
         ajax.open("POST", "http://localhost:3000/batch/student", true)
         ajax.setRequestHeader("Content-Type", "application/json")

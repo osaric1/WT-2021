@@ -7,11 +7,7 @@ const { json } = require('express/lib/response');
 const Sequelize = require('sequelize');
 const db = require('./db.js');
 const { resolve } = require('path');
-db.sequelize.sync({force:true}).then(function(){
-    inicijalizacija().then(function(){
-        console.log("Mockup podaci spremni!")
-    })
-})
+db.sequelize.sync({})
 
 app.use(bodyParser.json());
 app.use(cors())
@@ -20,6 +16,7 @@ app.use(express.static(__dirname))
 app.use(express.static('public'))
 app.use(express.static('public/html'))
 
+/*
 function inicijalizacija(){
     var vjezbeListaPromise = []
     var studentListaPromise = []
@@ -84,7 +81,7 @@ function inicijalizacija(){
         
     })
 }
-
+*/
 app.get('/vjezbe', function(req,res){
     db.vjezba.findAndCountAll().then(function(results){
         var IDs = results.rows.map(function(r){return r.id})
@@ -107,7 +104,7 @@ app.get('/vjezbe', function(req,res){
             for(i = 0; i < suma; i++){
                 content.brojZadataka.push("z" + i)
             }
-            console.log(JSON.parse(JSON.stringify(content)))
+   
 
             if(content.brojVjezbi <= 0 || content.brojVjezbi > 15){
                 pogresniParametri += "brojVjezbi"
@@ -143,7 +140,6 @@ app.get('/vjezbe', function(req,res){
 })
 app.post('/vjezbe', function(req,res){
     let jsonObject = req.body;
-    console.log("DE NAPISI NESTO VISE" + JSON.stringify(jsonObject))
     //provjera 
     var pogresniParametri = "Pogrešan parametar "
     if(jsonObject.brojVjezbi <= 0 || jsonObject.brojVjezbi > 15){
@@ -166,12 +162,11 @@ app.post('/vjezbe', function(req,res){
         else
             pogresniParametri += ",brojZadataka"
     }
-
     if(pogresniParametri != "Pogrešan parametar "){
         res.status(400)
         return res.json({status:"error", data: pogresniParametri})
     }
-    db.zadatak.destroy({ truncate: { cascade: true },restartIdentity: true }).then(function(){
+    db.zadatak.destroy({ truncate: { cascade : true },restartIdentity: true }).then(function(){
 
         db.vjezba.destroy({ truncate: { cascade: true },restartIdentity: true}).then(function(){
             var vjezbePromise = []
@@ -213,6 +208,7 @@ app.post('/student', function(req,res){
             db.student.create({ime: jsonObject.ime, prezime: jsonObject.prezime, index: jsonObject.index, grupa: null}).then(function(student){
                 db.grupa.findOne({where: {naziv: jsonObject.grupa}}).then(function(grupa){
                     var jsonGrupa = JSON.parse(JSON.stringify(grupa))
+
                     if(grupa == null){
 
                         db.grupa.create({naziv: jsonObject.grupa}).then(function(){
@@ -225,6 +221,7 @@ app.post('/student', function(req,res){
                     }
                     else{
                         db.student.update({grupa: jsonObject.grupa}, {where: {index: jsonObject.index}}).then(function(){
+                         
                             res.json({status: "Kreiran student!"})
                             res.end()
                         })
@@ -267,7 +264,6 @@ app.put('/student/:index',function(req,res){
 
 app.post("/batch/student", function(req,res){
     var obj = req.body
-    console.log(obj)
     for(let i = 0; i < obj.length; i++){
         
         if(Object.keys(obj[i]).length != 4){
@@ -282,17 +278,16 @@ app.post("/batch/student", function(req,res){
         if(obj[i].ime != 'undefined' && obj[i].prezime != 'undefined' && obj[i].index != 'undefined' && obj[i].grupa != 'undefined'){
             promise.push(new Promise(function(resolve,reject){
                 db.student.findOne({where : {index: obj[i].index}}).then(function(student){
-                    console.log("Usao sam u prvi promise")
                     if(student == null){
                             db.student.create({ime: obj[i].ime, prezime: obj[i].prezime, index: obj[i].index, grupa: null}).then(function(student){
-                                console.log("Usao sam u drugi promise")
+                             
                                 db.grupa.findOne({where: {naziv: obj[i].grupa}}).then(function(grupa){
-                                    console.log("Usao sam u treci promise")
+                           
                                 if(grupa == null){
                                         db.grupa.create({naziv: obj[i].grupa}).then(function(){
-                                            console.log("Usao sam u cetvrti pod a")
+                                
                                             db.student.update({grupa: obj[i].grupa}, {where: {index: obj[i].index}}).then(function(){
-                                                console.log("Usao sam u cetvrti pod b promise")
+                                               
                                                 m[i]++
                                                 resolve()
                                         })
@@ -300,7 +295,7 @@ app.post("/batch/student", function(req,res){
                                 }
                                 else{
                                         db.student.update({grupa: obj[i].grupa}, {where: {index: obj[i].index}}).then(function(){
-                                            console.log("Usao sam u cetvrti pod c promise")
+                                           
                                             m[i]++
                                             resolve()
                                     })
@@ -322,7 +317,7 @@ app.post("/batch/student", function(req,res){
             if(m[i] == 1)
                 brojac++
         }
-        console.log(m)
+   
 
         var novi = new Object()
         novi.status = "Dodano " + brojac + " studenata"
@@ -332,7 +327,7 @@ app.post("/batch/student", function(req,res){
         }
 
         if(brojac == obj.length){ /* svi su dodani */
-            res.json({ status: "Dodano " + obj.length + " studenata!"})
+            return res.json({ status: "Dodano " + obj.length + " studenata!"})
         }
 
         brojac = 0
@@ -344,7 +339,7 @@ app.post("/batch/student", function(req,res){
                     if(brojac != 0){
                         novi.status += ','
                     }
-                    console.log("ispisi")
+                   
                     novi.status += obj[i].index
                     brojac++
                 }
@@ -366,3 +361,5 @@ app.post("/batch/student", function(req,res){
 
 })
 app.listen(3000);
+
+module.exports = app
